@@ -195,9 +195,10 @@ export default function About() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -top-4 -left-4 glass border border-white/10 rounded-2xl px-4 py-2 text-sm"
+                className="absolute -top-4 -left-4 glass border border-white/10 rounded-2xl px-4 py-3"
               >
-                <span className="gradient-text font-semibold">3 yrs exp</span>
+                <p className="text-white/40 text-[10px] tracking-widest uppercase mb-1">Hello, I am</p>
+                <p className="text-white font-bold text-base font-poppins">👋 Ishita</p>
               </motion.div>
             </div>
           </motion.div>
