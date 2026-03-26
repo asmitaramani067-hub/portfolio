@@ -142,7 +142,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="relative flex justify-center"
           >
-            <div className="relative w-96 h-96 md:w-[420px] md:h-[420px]" style={{ overflow: "visible" }}>
+            <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px]" style={{ overflow: "visible" }}>
 
               {/* Rings — clipped so they never show above the container top */}
               <div style={{ position: "absolute", inset: 0, overflow: "hidden", borderRadius: "9999px", zIndex: 0, pointerEvents: "none" }}>
@@ -159,19 +159,19 @@ export default function About() {
               </div>
 
               {/* Image — sits above rings, overflows top */}
-              <div style={{ position: "absolute", inset: "2.5rem", zIndex: 10, overflow: "visible" }}>
-                <div className="w-full h-full rounded-full border border-indigo-500/20 overflow-hidden" style={{ position: "relative" }}>
+              <div style={{ position: "absolute", inset: "2rem", zIndex: 10, overflow: "visible" }}>
+                <div className="w-full h-full rounded-full border border-indigo-500/20" style={{ position: "relative", overflow: "hidden" }}>
                   <img
                     src="/profile.jpg"
                     alt="Ishita"
                     style={{
                       position: "absolute",
-                      width: "167%",
-                      height: "209%",
-                      objectFit: "none",
-                      objectPosition: "center 15%",
-                      left: "-5%",
-                      top:"-56%",
+                      width: "100%",
+                      height: "166%",
+                      objectFit: "cover",
+                      objectPosition: "center 10%",
+                      top: "-54%",
+                      left: "-19",
                       mixBlendMode: "screen",
                     }}
                     onError={(e) => {
